@@ -12,23 +12,31 @@
 /* Float Section */
 .float-section {
     float: left;
-    /* Apply step 1 here */
+    float: left;
 }
 
 .clear-float {
  clear:both;
 }
 
+.clear-both {
+    clear: both;
+}
+
+
+
+
+
+
 /* Flexbox Section */
 .flex-section {
 display: flex; 
 justify-content: space-around;
-    
+
 }
 
 .flex-item {
-    /* Apply step 4 here */
- 
+ align-self: center; 
 
 }
 
@@ -37,11 +45,11 @@ justify-content: space-around;
   height: 300px;
   grid-template-columns: repeat(6,1fr);
     grid-template-rows: repeat(6,1fr);
+    display: grid;
 }
 
 .grid-item {
   
-}
 .grid-item-1{
     grid-column-start:1 ;
      grid-column-end:  2;
@@ -71,4 +79,5 @@ justify-content: space-around;
     grid-column-start:6 ;
      grid-column-end:  7;
     grid-row:6;
+}
 }
